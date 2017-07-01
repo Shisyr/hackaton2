@@ -1,0 +1,14 @@
+
+<h1><%= @category.title %>:</h1>
+---------------------------------------------
+<%= link_to "Создать под категорий", new_sub_category_path(id: @category) %>
+
+</p>
+<div class="container">
+  <h3>
+  <% @sub_categories.each do  |sub_categories|%>
+        | <%= link_to sub_categories.title, sub_categories %>
+<% end %>
+|
+</h3>
+</div>

@@ -1,0 +1,9 @@
+<h3 class="text-center">Posts</h3>
+
+<div class="row">
+  <div class="col-xs-6 col-xs-offset-3">
+    <% @posts.each do |post| %>
+      <%= post.description %>
+    <% end %>
+  </div>
+</div>

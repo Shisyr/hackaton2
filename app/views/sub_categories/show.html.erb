@@ -1,0 +1,16 @@
+<h1><%= @sub_category.title %></h1>
+<%= link_to "Создать пост", new_post_path(id: @sub_category) %>
+--------------------------------------
+</p>
+<div class="posts-container">
+  <% @posts.each do  |posts|%>
+        <%= posts.description %> |
+      </p>
+        <% if(posts.image?) %>
+          <%= image_tag posts.image(:large) %>
+        <% end %>
+      </p>
+------------------------------------------------------------------
+</p>
+<% end %>
+</div>

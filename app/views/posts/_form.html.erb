@@ -1,0 +1,15 @@
+<%= form_for @post do |pr| %>
+<div class="create_posts">
+  <%= pr.label :description %>
+  <%= pr.text_area :description %>
+</div>
+<div class="create_posts">
+  <%= pr.hidden_field :sub_category_id %>
+</div>
+<div class="create_posts">
+  <%= pr.file_field :image %>
+</div>
+<div class="create_posts">
+  <%= pr.submit "Отправить" %>
+</div>
+<% end %>

@@ -1,0 +1,9 @@
+<%= form_for @category do |c| %>
+<div class="category">
+  <%= c.label :title %>
+  <%= c.text_field :title %>
+</div>
+<div class="category">
+  <%= c.submit "Create Category" %>
+</div>
+<% end %>

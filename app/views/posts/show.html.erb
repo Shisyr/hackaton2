@@ -1,0 +1,9 @@
+<div class="row">
+  <%= @post.description %>
+</p>
+  <% if(@post.image?) %>
+    <%= image_tag @post.image(:large) %>
+  <% end %>
+</div>
+
+<%= render 'disqus' %>
